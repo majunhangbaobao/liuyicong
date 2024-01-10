@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      html,body{
+	    width:100%;
+      	height:100%;
+      	margin:0px;
+      	overflow:hidden;
+		background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.ba20c8e168e5d20f6b79c3f42fd82161?rik=ceCJ95JqZQItLA&riu=http%3a%2f%2fpic.lvmama.com%2fuploads%2fpc%2fplace2%2f2019-04-11%2f691b38b1-318e-4d8b-b5a8-b3969b87ef16.jpg&ehk=sgHBz%2fztdc9gaM%2f4CwdIFlVOWtA7B1IuIo95L4TJGAY%3d&risl=&pid=ImgRaw&r=0);
+       opacity: 2;
+	  }
+		  
+	  .zi{
+		  position: absolute;
+		  margin-top:5% ;
+		  margin-left: 50%;
+		  top:0%;
+		  color:white;
+		  font-size:20px;
+	  }
+      .image_list{
+	  margin-left: 10%;
+      	margin-top:2%;
+      }
+      .image_list img{
+	    height:200px;
+		width:300px;
+      	opacity:0.8;
+      }
+      .image_list img:hover{
+      	opacity:1;
+      }
+      #bg{
+      	position:absolute;
+      	top:0px;
+      	left:0px;
+      	
+      	background-color:#000000;
+	    width:100%;
+      	height:100%;
+      	
+      	background-repeat:no-repeat;
+      	background-position:center;
+      	background-size:80% auto;
+      	
+      	display:none;
+      }
+      .close_btn{
+	    position:absolute;
+      	top:30px;
+      	right:30px;
+      	cursor:pointer;
+      	
+      	display:none;
+      }
+	
+    </style>
+    <script type="text/javascript" src="http://www.yyfun001.com/res/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+    	  $(".image_list img").click(function(){
+    		  $("#bg").css("background-image","url('"+this.src+"')");
+    		  $("#bg").css("display","block");
+    		  $(".close_btn").css("display","block");
+    	  });
+    	  
+    	  $(".close_btn").click(function(){
+    		  $("#bg").css("display","none");
+    		  $(".close_btn").css("display","none");
+    	  });
+      });
+    </script>
+  </head>
+  <body>
+	
+    <div class="zi">
+		正泰太阳能<br/>
+		连续3年在全球光伏领域综合实力排名前三，拥有中国最先进的光伏组件智能工厂，正致力成为全球领先的智慧能源解决方案提供商。<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		阿里巴巴<br/>
+		阿里巴巴网络技术有限公司是世界知名互联网企业，1999年成立于杭州，创始人为马云先生等。目前业务包括：淘宝网、天猫等，2016年阿里巴巴成为全球最大的零售交易平台。<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		海康威视<br/>
+		海康威视成立于2001年，主要进行视频监控数字化、网络化、高清智能化产品生产与配套服务。2015年市场规模全球第二、亚洲第一，产品被应用于全球150多个国家和地区。<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		白马湖生态创意城<br/>
+		2008年开始改建，现集聚了200多家文化创意、展览、影视、动漫、设计公司，承办了世界休闲产业博览会、杭州文化创意产业博览会，是中国国际动漫节永久举办地。
+	</div>
+    <!-- 图片列表 -->
+    <div class="image_list">
+      <img src="http://ywhz.hangzhou.com.cn/cxcy/images/2016-06/20/001ec94849ef190d3dd92b.jpg" title="点击查看大图" /><br/>
+      <img src="http://ywhz.hangzhou.com.cn/cxcy/images/2016-06/20/0023aea5a95c19022dc007.jpg" title="点击查看大图" /><br/>
+      <img src="http://ywhz.hangzhou.com.cn/cxcy/images/2016-06/20/001aa02787381912850a43.jpg" title="点击查看大图" /><br/>
+      <img src="http://ywhz.hangzhou.com.cn/cxcy/images/2016-06/20/0023aea5a95c190ea6170a.jpg" title="点击查看大图" /><br/>
+    </div>
+    
+    <!-- 黑色大背景 -->
+    <div id="bg"></div>
+	
+    <!-- 关闭按扭 -->
+    <img class="close_btn" src="http://www.yyfun001.com/res/jquery/images/close_btn.png" title="关闭" />
+    
+  </body>
+ 
+</html>
